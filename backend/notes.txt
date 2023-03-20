@@ -1,0 +1,2 @@
+username : blogappadmin
+password : 4esq8rAphns7NJxe

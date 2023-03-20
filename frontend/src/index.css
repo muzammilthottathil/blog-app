@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #0f172a;
+    color: white;
+}
+
+@layer components {
+    .auth_input {
+        @apply bg-slate-800 w-full text-gray-500 flex items-center justify-start gap-x-1 border-2 pl-3 border-slate-700 rounded-lg;
+    }
+    .auth_input > input {
+        @apply bg-transparent flex-1 border-none outline-none text-gray-400 placeholder:text-gray-500 rounded-lg p-2 w-full ring-0;
+    }
+
+    .gradient_btn {
+        @apply w-full text-slate-800 font-semibold py-2.5 rounded-md disabled:opacity-50 px-6 hover:scale-[0.98] hover:hue-rotate-15 transition-all duration-200;
+        background: linear-gradient(270deg, #22d3ee 50%, #0ea5e9 100%);
+    }
+}
